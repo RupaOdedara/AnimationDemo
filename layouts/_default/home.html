@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{- if .Site.IsServer -}} {{ "<!-- Layout: _default/home.html -->" |safeHTML }} {{- end -}}
+  <section class="main">
+    <div class="hero">
+      <img src="/img/hero.jpg" alt="">
+      <h1 class="headline">Dream Big</h1>
+    </div>
+  </section>
+ 
+  {{- if .Site.IsServer -}} {{ "<!-- Layout: End _default/home.html -->" |safeHTML }} {{- end -}}
+{{ end }}

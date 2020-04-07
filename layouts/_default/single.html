@@ -1,0 +1,23 @@
+{{ define "main" }}
+  {{- if .Site.IsServer -}} {{ "<!-- Layout: _default/single.html -->" |safeHTML }} {{- end -}}
+  
+
+  <div id="fullpage">
+    <section class="section s1">
+      <h1>Traveling Blog</h1>
+    </section>
+    <section class="section s2">
+      <h1>Different Style</h1>
+      <div class="description">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro pariatur harum natus ipsa repellat facilis ipsum fugiat omnis! Velit facere corrupti ratione atque odit voluptates aliquam, dicta error debitis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam beatae expedita sed accusantium adipisci fugiat ab alias voluptatibus eum explicabo amet, tempore, obcaecati porro atque provident quae ex quis!</p>
+      </div>
+      <img src="/img/style1.jpg" alt="" class="image">
+      <img src="/img/style2.jpg" alt="" class="image">
+      <img src="/img/style3.jpg" alt="" class="image">
+    </section>
+
+  </div>
+
+  {{- if .Site.IsServer -}} {{ "<!-- Layout: End _default/single.html -->" |safeHTML }} {{- end -}}
+{{ end }}

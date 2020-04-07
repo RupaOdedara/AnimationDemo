@@ -1,0 +1,18 @@
+{{- if .Site.IsServer -}} {{ "<!-- Layout: partial/head.html -->" |safeHTML }} {{- end -}}
+
+  <head>
+    <meta  charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title}}</title> 
+    
+ 
+    
+    <!-- Styles -->
+  
+
+    <link rel="stylesheet" href="/css/fullpage.min.css" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+ 
+  </head>
+  
+{{- if .Site.IsServer -}} {{ "<!-- Layout: End partial/head.html -->" |safeHTML }} {{- end -}}

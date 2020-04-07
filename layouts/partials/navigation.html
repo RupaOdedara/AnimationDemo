@@ -1,0 +1,20 @@
+{{- if .Site.IsServer -}} {{ "<!-- Layout: partial/navigation.html -->" |safeHTML }} {{- end -}}
+
+ 
+  <header>
+    <nav class="nav">
+      <h3 id="logo">Dream vacation</h3>
+     
+      <ul class="menu">
+        {{ range .Site.Menus.main }} 
+        <li class="item"><a href="{{.URL}}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+    <div class="slider"></div>
+      
+  </header>
+ 
+
+
+{{- if .Site.IsServer -}} {{ "<!-- Layout: partial/navigation.html -->" |safeHTML }} {{- end -}}
