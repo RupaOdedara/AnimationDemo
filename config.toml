@@ -1,0 +1,28 @@
+baseURL = ""
+languageCode = "en-us"
+title= "Animation Page"
+
+
+
+  
+  [menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 100
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 200
+
+  [[menu.main]]
+    name = "Portfolio"
+    url = "/portfolio/"
+    weight = 400
+  [[menu.main]]
+   
+    name = "Contact Us"
+    url = "/contactus/"
+    weight = 500
